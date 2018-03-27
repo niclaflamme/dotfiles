@@ -1,0 +1,18 @@
+[alias]
+	last = log -1 HEAD
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	cp = cherry-pick
+	hist = log --pretty=format:%h
+	hist = log --pretty=format:%h
+        aa = add .
+        wip = commit -m 'wip' -n
+[user]
+	email = nic@laflamme.io
+	name = niclaflamme
+[core]
+	editor = vim -f -v
+[push]
+	default = simple
