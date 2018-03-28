@@ -125,7 +125,7 @@ vnoremap <C-c> "+Y<Return>
 map :f2c ggVG<C-c>
 
 " Remove trailing whitespace
-nmap <BS> :FixWhitespace<Return>
+nmap <BS> :FixWhitespace<Return>:noh<Return>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
