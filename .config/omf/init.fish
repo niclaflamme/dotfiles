@@ -36,6 +36,7 @@ alias unito='cd ~/unito/code'
 alias conn='unito; and cd connectors'
 alias cons='unito; and cd console'
 alias ucomm='unito; and cd ucommon'
+alias sw='unito; and cd sync-worker'
 alias unitosymlinks='unito; and ./internal-tools/dev/local_libs.sh'
 alias unitotime='unito; and cd ../timesheets; and ll'
 
