@@ -1,0 +1,43 @@
+general {
+    colors = true
+    color_good = "#00FF00"
+
+    output_format = "i3bar"
+    interval = 5
+}
+
+
+order += "cpu_usage"
+order += "disk /"
+order += "battery 0"
+order += "volume master"
+order += "time"
+
+
+battery 0 {
+    format = "  %percentage"
+    integer_battery_capacity = true
+    low_threshold = 15
+    threshold_type = percentage
+}
+
+
+cpu_usage {
+   format = " CPU %usage "
+}
+
+
+disk "/" {
+    format = "   %avail "
+}
+
+
+time {
+    format = "   %m-%d |  %H:%M"
+}
+
+volume master {
+    format = "   %volume"
+    format_muted = "  x"
+}
+
