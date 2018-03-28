@@ -3,7 +3,8 @@ alias ll='ls -la'
 
 
 # SSH
-alias sshpubcopy='xclip -sel clip < ~/.ssh/id_rsa.pub'
+alias ssha='ssh-add'
+alias sshcp='xclip -sel clip < ~/.ssh/id_rsa.pub'
 
 
 # DOTFILES
