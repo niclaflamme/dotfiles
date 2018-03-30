@@ -7,6 +7,10 @@ alias ssha='ssh-add'
 alias sshcp='xclip -sel clip < ~/.ssh/id_rsa.pub'
 
 
+# NOTES
+alias notes='cd ~/notes; and ll'
+
+
 # DOTFILES
 alias dot='cd ~/dotfiles'
 alias dotgit='git --git-dir ~/.dotfiles/.git --work-tree=$HOME'
