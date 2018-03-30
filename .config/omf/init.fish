@@ -26,9 +26,9 @@ function gitsquash
 end
 
 
-# VIM
-alias v='vim'
-alias vi='vim'
+# VIM (vimx is to allow clipboard access)
+alias v='vimx'
+alias vi='vimx'
 
 
 # UNITO
