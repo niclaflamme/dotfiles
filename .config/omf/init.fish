@@ -26,7 +26,7 @@ alias gti='git'
 alias ggit='git'
 # GIT (FUNCTIONS)
 function gitsquash
-      git rebase -i HEAD~($argv)
+    git rebase -i HEAD~$argv
 end
 
 
