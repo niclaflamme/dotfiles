@@ -1,169 +1,28 @@
-# Constants
-  set $mod Mod1
-
-  set $workspace1 1: 
-  set $workspace2 2: 
-  set $workspace3 3: 
-  set $workspace4 4: 
-  set $workspace5 5: 
-  set $workspace6 6: 
-  set $workspace7 7: 
-  set $workspace8 8: 
-  set $workspace9 9: 
-  set $workspace10 10: 
-
-
-# Settings
-  font pango:monospace 9
-
+# Nic's custom stuff - add this to bottom of i3 config
+# ----------------------------------------------------
 
 # Keystroke repeat delay
-  exec_always xset r rate 210 70
-
-
-# Display -> setup with arandr (sudo apt-get install arandr)
-  exec_always --no-startup-id xsetroot -solid "#333333"
-  exec_always ~/.screenlayout/external.sh
-  bindsym $mod+Shift+m exec ~/.screenlayout/native.sh
-
-# NOTE DISPLAY - add and customize following lines in ~/.Xresources (will require lougout)
-  # Xcursor.size: 16
-  # Xft.dpi: 72
-
-
-# Window Assignment -> 'xprop' + click application to find application className
-  assign [class="Google-chrome"] →  $workspace1
-  assign [class="Emacs24"] →  $workspace2
-  assign [class="Postman"] →  $workspace7
-  assign [class="robo3t"] →  $workspace8
-  assign [class="Spotify"] →  $workspace9
-  assign [class="Slack"] →  $workspace10
-
-
-# Program binding
-  bindsym $mod+Return exec i3-sensible-terminal
-  bindsym $mod+d exec dmenu_run
-  bindsym $mod+Shift+q kill
-  floating_modifier $mod
-
+exec_always xset r rate 210 70
 
 # Natural Scrolling
-  exec --no-startup-id synclient HorizEdgeScroll=1 VertEdgeScroll=1 VertScrollDelta=-111
-
+exec --no-startup-id synclient HorizEdgeScroll=1 VertEdgeScroll=1 VertScrollDelta=-111
 
 # Remap <Caps> to <Esc>
-  exec_always xmodmap -e "clear lock" #disable caps lock switch
-  exec_always xmodmap -e "keysym Caps_Lock = Escape" #set caps_lock as escape
-
-
-# Focus
-  bindsym $mod+j focus left
-  bindsym $mod+k focus down
-  bindsym $mod+l focus up
-  bindsym $mod+semicolon focus right
-  bindsym $mod+Left focus left
-  bindsym $mod+Down focus down
-  bindsym $mod+Up focus up
-  bindsym $mod+Right focus right
-  focus_follows_mouse no
-
-
-# Move Window
-  bindsym $mod+Shift+j move left
-  bindsym $mod+Shift+k move down
-  bindsym $mod+Shift+l move up
-  bindsym $mod+Shift+semicolon move right
-  bindsym $mod+Shift+Left move left
-  bindsym $mod+Shift+Down move down
-  bindsym $mod+Shift+Up move up
-  bindsym $mod+Shift+Right move right
-
-
-# Container Split
-  bindsym $mod+h split h
-  bindsym $mod+v split v
-  # bindsym $mod+s layout stacking
-  # bindsym $mod+w layout tabbed
-  bindsym $mod+e layout toggle split
-
-
-# Fullscreen Toggle
-  bindsym $mod+f fullscreen toggle
-
-
-# Focus strange stuff
-  # bindsym $mod+Shift+space floating toggle
-  # bindsym $mod+space focus mode_toggle
-  # bindsym $mod+a focus parent
-
-
-# Workspace Bindings
-  bindsym $mod+1 workspace $workspace1
-  bindsym $mod+2 workspace $workspace2
-  bindsym $mod+3 workspace $workspace3
-  bindsym $mod+4 workspace $workspace4
-  bindsym $mod+5 workspace $workspace5
-  bindsym $mod+6 workspace $workspace6
-  bindsym $mod+7 workspace $workspace7
-  bindsym $mod+8 workspace $workspace8
-  bindsym $mod+9 workspace $workspace9
-  bindsym $mod+0 workspace $workspace10
-
-  bindsym $mod+Shift+1 move container to workspace $workspace1
-  bindsym $mod+Shift+2 move container to workspace $workspace2
-  bindsym $mod+Shift+3 move container to workspace $workspace3
-  bindsym $mod+Shift+4 move container to workspace $workspace4
-  bindsym $mod+Shift+5 move container to workspace $workspace5
-  bindsym $mod+Shift+6 move container to workspace $workspace6
-  bindsym $mod+Shift+7 move container to workspace $workspace7
-  bindsym $mod+Shift+8 move container to workspace $workspace8
-  bindsym $mod+Shift+9 move container to workspace $workspace9
-  bindsym $mod+Shift+0 move container to workspace $workspace10
-
-
-# Reload and Refresh i3
-  bindsym $mod+Shift+c reload
-  bindsym $mod+Shift+r restart
-
-
-# Lock -> apt-get install xautolock
-  bindsym $mod+Shift+x exec i3lock
-  exec_always --no-startup-id xautolock -time 10 -locker i3lock
-  exec_always --no-startup-id xautolock -time 11 -locker "systemctl syspend"
-
+exec_always xmodmap -e "clear lock" #disable caps lock switch
+exec_always xmodmap -e "keysym Caps_Lock = Escape" #set caps_lock as escape
 
 # Logout
-  bindsym $mod+Shift+e exec sh -c '[ $(echo "NO\nYES" | dmenu -sb "#4982b7" -i -p "EXIT?") = "YES" ] && i3-msg exit'
+bindsym $mod+Shift+e exec sh -c '[ $(echo "YES" | dmenu -sb "#4982b7" -i -p "EXIT?") = "YES" ] && i3-msg exit'
 
+# Lock screen
+bindsym $mod+Shift+x exec i3lock
 
-# Sound
-  exec amixer -D pulse set Master 100%
-  bindsym XF86AudioMute exec "amixer -D pulse set Master 1+ toggle"
-  bindsym XF86AudioLowerVolume exec "exec amixer -q set Master 10%-"
-  bindsym XF86AudioRaiseVolume exec "exec amixer -q set Master 10%+"
+# Auto lock screen
+exec --no-startup-id xautolock -time 5 -locker i3lock &
 
+# Focus does not follow mouse
+focus_follows_mouse no
 
-# Resize
-  bindsym $mod+r mode "resize"
-  mode "resize" {
-    bindsym j resize shrink width 10 px or 10 ppt
-    bindsym k resize grow height 10 px or 10 ppt
-    bindsym l resize shrink height 10 px or 10 ppt
-    bindsym semicolon resize grow width 10 px or 10 ppt
-
-    bindsym Left resize shrink width 10 px or 10 ppt
-    bindsym Down resize grow height 10 px or 10 ppt
-    bindsym Up resize shrink height 10 px or 10 ppt
-    bindsym Right resize grow width 10 px or 10 ppt
-
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-  }
-
-
-# Status Bar
-  bar {
-    status_command i3status
-    tray_output primary
-  }
+# Mute toggle
+bindsym XF86AudioMute exec "amixer -D pulse set Master 1+ toggle"
 
