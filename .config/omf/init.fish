@@ -31,8 +31,8 @@ end
 
 
 # VIM (vimx is to allow clipboard access)
-alias v='vimx'
-alias vi='vimx'
+alias v='vim'
+alias vi='vim'
 
 
 # UNITO

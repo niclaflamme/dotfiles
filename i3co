@@ -120,6 +120,8 @@ bindsym $mod+Shift+0 move container to workspace 10
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -152,38 +154,3 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
-
-
-# Nic's custom stuff - add this to bottom of i3 config
-# ----------------------------------------------------
-
-# Background
-exec_always xsetroot -solid "#333333"
-
-# Native laptop screen
-exec_always ~/.screenlayout/native.sh
-
-# Keystroke repeat delay
-exec_always xset r rate 210 70
-
-# Natural Scrolling
-exec --no-startup-id synclient HorizEdgeScroll=1 VertEdgeScroll=1 VertScrollDelta=-111
-
-# Remap <Caps> to <Esc>
-exec_always xmodmap -e "clear lock" #disable caps lock switch
-exec_always xmodmap -e "keysym Caps_Lock = Escape" #set caps_lock as escape
-
-# Logout
-bindsym $mod+Shift+e exec sh -c '[ $(echo "YES" | dmenu -sb "#4982b7" -i -p "EXIT?") = "YES" ] && i3-msg exit'
-
-# Lock screen
-bindsym $mod+Shift+x exec i3lock
-
-# Auto lock screen
-exec --no-startup-id xautolock -time 5 -locker i3lock &
-
-# Focus does not follow mouse
-focus_follows_mouse no
-
-# Mute toggle
-bindsym XF86AudioMute exec "amixer -D pulse set Master 1+ toggle"

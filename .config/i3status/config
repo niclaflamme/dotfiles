@@ -15,7 +15,7 @@ order += "time"
 
 
 battery 0 {
-    format = "  %percentage"
+    format = "⚡ %percentage"
     integer_battery_capacity = true
     low_threshold = 15
     threshold_type = percentage
@@ -28,16 +28,15 @@ cpu_usage {
 
 
 disk "/" {
-    format = "   %avail "
+    format = " 💾 %avail "
 }
 
 
 time {
-    format = "   %m-%d |  %H:%M"
+    format = " 📆 %m-%d | 🕑 %H:%M "
 }
 
 volume master {
-    format = "   %volume"
-    format_muted = "  x"
+    format = " 🔊 %volume "
+    format_muted = "🔈❌"
 }
-

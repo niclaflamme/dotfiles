@@ -29,6 +29,9 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vundle does not work with fish shell
+set shell=/bin/bash
+
 " Sets how manu lines VIM needs to remmember
 set history=500
 
