@@ -38,5 +38,5 @@ time {
 
 volume master {
     format = " 🔊 %volume "
-    format_muted = "🔈❌"
+    format_muted = " 🔈 mute "
 }
