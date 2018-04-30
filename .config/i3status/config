@@ -15,7 +15,7 @@ order += "time"
 
 
 battery 0 {
-    format = "⚡ %percentage"
+    format = "⚡ %percentage "
     integer_battery_capacity = true
     low_threshold = 15
     threshold_type = percentage
