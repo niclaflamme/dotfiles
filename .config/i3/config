@@ -187,3 +187,6 @@ focus_follows_mouse no
 
 # Mute toggle
 bindsym XF86AudioMute exec "amixer -D pulse set Master 1+ toggle"
+
+# Prevent floats from taking more than entire screen
+floating_maximum_size 1500 x 800
