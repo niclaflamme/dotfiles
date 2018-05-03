@@ -1,5 +1,8 @@
 # GENERAL
 alias ll='ls -la'
+function clipboard
+    xclip -sel clip < $argv
+end
 
 
 # SSH
