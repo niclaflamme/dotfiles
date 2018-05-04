@@ -54,3 +54,6 @@ alias sound:low='amixer -D pulse sset Master 25%'
 alias sound:half='amixer -D pulse sset Master 50%'
 alias sound:full='amixer -D pulse sset Master 100%'
 alias sound:toggle='amixer -D pulse set Master 1+ toggle'
+
+# FISH VI MODE
+fish_vi_key_bindings
