@@ -161,7 +161,8 @@ bar {
 exec_always xsetroot -solid "#333333"
 
 # Native laptop screen
-exec_always ~/.screenlayout/native.sh
+exec ~/.screenlayout/native.sh
+bindsym $mod+Shift+n exec sh -c '~/.screenlayout/native.sh'
 
 # Keystroke repeat delay
 exec_always xset r rate 210 70
