@@ -21,8 +21,14 @@
 "     -> Vundle Config Boilerplate
 "     -> Plugins
 "     -> Vundle Config Boilerplate (End)
-
-
+"
+"
+" NOTE: command to install vim-plug (after neovim):
+"
+"   curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+"     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"
+"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
