@@ -33,7 +33,8 @@ function gitsquash
 end
 
 
-# VIM (vimx is to allow clipboard access)
+# VIM
+alias vim="nvim"
 alias v='vim'
 alias vi='vim'
 
