@@ -1,13 +1,13 @@
 [alias]
-	last = log -1 HEAD
-	co = checkout
+        aa = add .
 	br = branch
 	ci = commit
-	st = status
+	co = checkout
 	cp = cherry-pick
 	hist = log --pretty=format:%h
-	hist = log --pretty=format:%h
-        aa = add .
+	last = log -1 HEAD
+	st = status
+        psuh = push
         wip = commit -m 'wip' -n
 [user]
 	email = nic@laflamme.io

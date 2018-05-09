@@ -1,6 +1,6 @@
 # GENERAL
 alias ll='ls -la'
-function clipboard
+function cfile
     xclip -sel clip < $argv
 end
 
@@ -56,5 +56,5 @@ alias sound:half='amixer -D pulse sset Master 50%'
 alias sound:full='amixer -D pulse sset Master 100%'
 alias sound:toggle='amixer -D pulse set Master 1+ toggle'
 
-# FISH VI MODE
-fish_vi_key_bindings
+# NVM
+nvm use 8.11.1

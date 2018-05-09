@@ -18,9 +18,7 @@
 "     -> Status line
 "     -> Editing Mapping
 "     -> Searching
-"     -> Vundle Config Boilerplate
 "     -> Plugins
-"     -> Vundle Config Boilerplate (End)
 "
 "
 " NOTE: command to install vim-plug (after neovim):
@@ -222,7 +220,11 @@ call plug#begin('~/.vim/plugged')
 
 
 " Autocomplete
-Plug 'shougo/deoplete.nvim'
+" Plug 'shougo/deoplete.nvim'
+Plug 'valloric/youcompleteme'
+
+" Auto close paren pairs
+" Plug 'jiangmiao/auto-pairs'
 
 " Status bar styling
 Plug 'vim-airline/vim-airline'
@@ -243,7 +245,7 @@ Plug 'kien/ctrlp.vim'
   let g:ctrlp_map = '<c-p>'
   let g:ctrlp_cmd = 'CtrlP'
   let g:ctrlp_working_path_mode = 'ra'
-  let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|elm-stuff'
+  let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|elm-stuff\|dist'
   let g:ctrlp_show_hidden = 1
   " Recently opened buffers
   nmap <c-b> :CtrlPBuffer<Return>
@@ -294,5 +296,9 @@ Plug 'altercation/vim-colors-solarized'
 
 " To install packages, run command `:PlugInstall`
 call plug#end()
+
+" To get YCM autocompletion
+" cd ~/.config/nvim/plugged/YouCompleteMe
+" ./install.py
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
