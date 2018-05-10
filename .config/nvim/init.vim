@@ -245,7 +245,7 @@ Plug 'kien/ctrlp.vim'
   let g:ctrlp_map = '<c-p>'
   let g:ctrlp_cmd = 'CtrlP'
   let g:ctrlp_working_path_mode = 'ra'
-  let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|elm-stuff\|dist'
+  let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|.git\|elm-stuff\|dist'
   let g:ctrlp_show_hidden = 1
   " Recently opened buffers
   nmap <c-b> :CtrlPBuffer<Return>
