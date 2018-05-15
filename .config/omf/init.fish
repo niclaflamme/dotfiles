@@ -57,4 +57,4 @@ alias sound:full='amixer -D pulse sset Master 100%'
 alias sound:toggle='amixer -D pulse set Master 1+ toggle'
 
 # NVM
-nvm use 8.11.1
+nvm use 8.11.1 --silent
