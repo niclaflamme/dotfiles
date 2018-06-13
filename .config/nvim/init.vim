@@ -179,13 +179,18 @@ set showcmd
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Typo prevention on exit
 command! Q q
+command! Q! q!
 command! QA qa
 command! Qa qa
+command! Q! q!
+command! QA! qa!
+command! Qa! qa!
+
 command! W w
 command! WQ wq
+command! Wq wq
 command! WQA wqa
 command! WQa wqa
-command! Wq wq
 command! Wqa wqa
 
 " Disabled commands
