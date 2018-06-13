@@ -179,12 +179,8 @@ set showcmd
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Typo prevention on exit
 command! Q q
-command! Q! q!
 command! QA qa
 command! Qa qa
-command! Q! q!
-command! QA! qa!
-command! Qa! qa!
 
 command! W w
 command! WQ wq
