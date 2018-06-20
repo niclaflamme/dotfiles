@@ -8,9 +8,6 @@
 " Inspiration:
 "     https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim
 "
-" Version:
-"     0.0.1
-"
 " Sections:
 "     -> General
 "     -> VIM user interface
@@ -21,11 +18,15 @@
 "     -> Status line
 "     -> Editing Mapping
 "     -> Searching
-"     -> Vundle Config Boilerplate
 "     -> Plugins
-"     -> Vundle Config Boilerplate (End)
-
-
+"
+"
+" NOTE: command to install vim-plug (after neovim):
+"
+"   curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+"     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"
+"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -180,11 +181,12 @@ set showcmd
 command! Q q
 command! QA qa
 command! Qa qa
+
 command! W w
 command! WQ wq
+command! Wq wq
 command! WQA wqa
 command! WQa wqa
-command! Wq wq
 command! Wqa wqa
 
 " Disabled commands
@@ -212,48 +214,45 @@ map <silent> <leader><space> :noh<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vundle Config Boilerplate
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible
-filetype off
-
-" Set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" Let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins Config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"  Plugins will be downloaded under the specified directory.
+call plug#begin('~/.vim/plugged')
+
+
+" Autocomplete
+" Plug 'shougo/deoplete.nvim'
+Plug 'valloric/youcompleteme'
+
+" Auto close paren pairs
+" Plug 'jiangmiao/auto-pairs'
+
 " Status bar styling
-Plugin 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline'
 
 " Git integration
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 " Linting
-Plugin 'w0rp/ale'
+Plug 'w0rp/ale'
   let g:ale_sign_error = '>>'
   let g:ale_sign_warning = '--'
 
 " Parens, brackets and curlies
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 
 " Find filename
-Plugin 'kien/ctrlp.vim'
+Plug 'kien/ctrlp.vim'
   let g:ctrlp_map = '<c-p>'
   let g:ctrlp_cmd = 'CtrlP'
   let g:ctrlp_working_path_mode = 'ra'
-  let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|elm-stuff'
+  let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|.git\|elm-stuff\|dist'
   let g:ctrlp_show_hidden = 1
   " Recently opened buffers
   nmap <c-b> :CtrlPBuffer<Return>
 
 " Find in project -> `sudo apt-get install silversearcher-ag`
-Plugin 'mileszs/ack.vim'
+Plug 'mileszs/ack.vim'
 " replace ack with ag
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
@@ -263,46 +262,44 @@ nnoremap <Leader>a :Ack! ""<Left>
 nnoremap <Leader>A :Ack! <C-r><C-w><CR>
 
 " Directory Tree
-Plugin 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
   map <C-n> :NERDTreeToggle<CR>
 
 " Display Trailing WhiteSpace
-Plugin 'bronson/vim-trailing-whitespace'
+Plug 'bronson/vim-trailing-whitespace'
 
 " Language Support
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'elmcast/elm-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'elmcast/elm-vim'
   let g:elm_format_autosave = 1
-Plugin 'leafgarland/typescript-vim'
+Plug 'leafgarland/typescript-vim'
   let g:typescript_indent_disable = 1
-Plugin 'flowtype/vim-flow'
+Plug 'flowtype/vim-flow'
   let g:flow#autoclose = 1
-Plugin 'ekalinin/dockerfile.vim'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'fatih/vim-go'
-Plugin 'tpope/vim-markdown'
-
-" Autocomplete
-" Instalation -> https://github.com/Valloric/YouCompleteMe#ubuntu-linux-x64
-Plugin 'Valloric/YouCompleteMe'
+Plug 'ekalinin/dockerfile.vim'
+Plug 'digitaltoad/vim-jade'
+Plug 'fatih/vim-go'
+Plug 'tpope/vim-markdown'
 
 " Split autoscaling
-Plugin 'roman/golden-ratio'
+Plug 'roman/golden-ratio'
 
 " Comments
-Plugin 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdcommenter'
   let g:NERDSpaceDelims = 1
   let g:NERDDefaultAlign = 'left'
   let g:NERDCommentEmptyLines = 1
 
+" Color - somehow this fixed my color problems
+Plug 'altercation/vim-colors-solarized'
+  set background=dark
+
+" To install packages, run command `:PlugInstall`
+call plug#end()
+
+" To get YCM autocompletion
+" cd ~/.config/nvim/plugged/YouCompleteMe
+" ./install.py
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vundle Config Boilerplate (End)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-" To install packages, run command `:BundleInstall`
-
-
