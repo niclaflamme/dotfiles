@@ -39,16 +39,18 @@ alias v='vim'
 alias vi='vim'
 
 
+# TMUX
+alias tmux='env TERM=xterm-256color tmux'
+
+
 # INVIVO
-alias invivo='cd ~/invivo/code'
+alias inv='cd ~/invivo/code'
+alias herm='inv; and hermes'
 
 
-# SOUND
-alias sound:off='amixer -D pulse sset Master 0%'
-alias sound:low='amixer -D pulse sset Master 25%'
-alias sound:half='amixer -D pulse sset Master 50%'
-alias sound:full='amixer -D pulse sset Master 100%'
-alias sound:toggle='amixer -D pulse set Master 1+ toggle'
+# MONGODB
+alias mongo-local="sudo docker container run -d --rm --name mongo -p 27017:27017 -v /var/data/db:/data/db mongo"
 
-# NVM
+
+# NVM on boot
 nvm use 8.11.3 --silent
