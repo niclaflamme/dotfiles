@@ -48,8 +48,9 @@ alias inv='cd ~/invivo/code'
 alias herm='inv; and hermes'
 
 
-# MONGODB
-alias mongo-local="sudo docker container run -d --rm --name mongo -p 27017:27017 -v /var/data/db:/data/db mongo"
+# SERVICES
+alias services:docker='sudo systemctl start docker'
+alias services:mongo='sudo docker container run -d --rm --name mongo -p 27017:27017 -v /var/data/db:/data/db mongo'
 
 
 # NVM on boot
