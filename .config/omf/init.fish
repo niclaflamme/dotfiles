@@ -45,7 +45,8 @@ alias tmux='env TERM=xterm-256color tmux'
 
 # INVIVO
 alias inv='cd ~/invivo/code'
-alias herm='inv; and hermes'
+alias gaia='inv and cd gaia'
+alias herm='inv; and cd hermes'
 
 
 # SERVICES
