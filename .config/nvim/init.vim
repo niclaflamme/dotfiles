@@ -123,10 +123,9 @@ set autoindent
 set shiftround
 set softtabstop=2
 
-" Copy from clipboard
-vnoremap <C-c> "+Y<Return>
-" Copy entire file-2-clipboard
-map :f2c ggVG<C-c>
+" Clipboard
+vnoremap <leader>y "+y<Return>
+nnoremap <leader>p "+p<Return>
 
 " Remove trailing whitespace
 nmap <BS> :FixWhitespace<Return>:noh<Return>
@@ -225,7 +224,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'valloric/youcompleteme'
 
 " Auto close paren pairs
-" Plug 'jiangmiao/auto-pairs'
+Plug 'jiangmiao/auto-pairs'
 
 " Status bar styling
 Plug 'vim-airline/vim-airline'
