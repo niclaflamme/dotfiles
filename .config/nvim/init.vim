@@ -224,7 +224,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'valloric/youcompleteme'
 
 " Auto close paren pairs
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 
 " Status bar styling
 Plug 'vim-airline/vim-airline'
