@@ -16,7 +16,7 @@
 "     -> Moving around, tabs, windows and buffers
 "     -> Text, tab and indentation
 "     -> Status line
-"     -> Editing Mapping
+"     -> Mapping overwrites
 "     -> Searching
 "     -> Plugins
 "
@@ -174,7 +174,7 @@ set showcmd
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Editing mappings
+" => Mapping overwrites
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Typo prevention on exit
 command! Q q
@@ -196,6 +196,8 @@ nnoremap <Down> <nop>
 nnoremap <Left> <nop>
 nnoremap <Right> <nop>
 
+vmap <leader><leader> :sort<Return>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Searching
@@ -209,7 +211,7 @@ map <space> /
 
 
 " Disable highlight when <leader><cr> is pressed
-map <silent> <leader><space> :noh<cr>
+map <silent> <leader><space> :noh<Return>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
