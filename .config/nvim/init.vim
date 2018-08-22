@@ -50,7 +50,7 @@ let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
-set number
+set relativenumber
 
 " Prevent creation on .swp file on buffer close.
 set noswapfile
