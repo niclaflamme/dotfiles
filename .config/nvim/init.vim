@@ -282,6 +282,7 @@ Plug 'ekalinin/dockerfile.vim'
 Plug 'digitaltoad/vim-jade'
 Plug 'fatih/vim-go'
 Plug 'tpope/vim-markdown'
+Plug 'cespare/vim-toml'
 
 " Split autoscaling
 Plug 'roman/golden-ratio'
