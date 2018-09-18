@@ -283,6 +283,7 @@ Plug 'digitaltoad/vim-jade'
 Plug 'fatih/vim-go'
 Plug 'tpope/vim-markdown'
 Plug 'cespare/vim-toml'
+Plug 'groenewege/vim-less'
 
 " Split autoscaling
 Plug 'roman/golden-ratio'
