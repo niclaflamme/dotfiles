@@ -55,4 +55,4 @@ alias services:mongo='sudo docker container run -d --rm --name mongo -p 27017:27
 
 
 # NVM on boot
-nvm use 8.11.3 --silent
+nvm use 11.10.0 --silent

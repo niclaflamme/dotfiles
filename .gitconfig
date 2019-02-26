@@ -13,6 +13,6 @@
 	email = nic@laflamme.io
 	name = niclaflamme
 [core]
-	editor = vim -f -v
+	editor = nvim
 [push]
 	default = simple
