@@ -49,6 +49,7 @@ let g:mapleader = ","
 
 " Fast saving
 nmap <leader>w :w!<cr>
+nmap <leader>W :wqa!<cr>
 
 set number
 
