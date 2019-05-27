@@ -47,6 +47,9 @@ set autoread
 let mapleader = ","
 let g:mapleader = ","
 
+" Single finger colon
+nmap <leader><leader> :
+
 " Fast saving
 nmap <leader>w :w!<cr>
 nmap <leader>W :wqa!<cr>
@@ -144,7 +147,8 @@ set splitbelow
 set splitright
 
 " Quick horizontal split & quick tab close
-nmap <leader><leader> :vs<Return>
+nmap <leader>s :vs<Return>
+nmap <leader>d :sp<Return>
 nmap <leader>q :q<Return>
 
 " Cycle tabs
