@@ -3,6 +3,9 @@ alias ll='ls -la'
 function cfile
     xclip -sel clip < $argv
 end
+function mcd
+    mkdir $argv; and cd $argv
+end
 
 
 # SSH
