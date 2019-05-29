@@ -52,7 +52,3 @@ alias zeus='inv; and cd zeus'
 # SERVICES
 alias services:docker='sudo systemctl start docker'
 alias services:mongo='sudo docker container run -d --rm --name mongo -p 27017:27017 -v /var/data/db:/data/db mongo'
-
-
-# NVM on boot
-nvm use 11.10.0 --silent
