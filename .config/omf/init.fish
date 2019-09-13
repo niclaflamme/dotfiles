@@ -46,5 +46,10 @@ alias vi='vim'
 alias tmux='env TERM=xterm-256color tmux'
 
 
-# INVIVO
+# WORK DIRS
 alias inv='cd ~/invivo/code'
+alias ind='cd ~/indivity'
+
+# DOCKER
+alias start-docker='sudo systemctl start docker'
+alias docker-mongo='sudo docker run -d --name mongo-local -p 27017:27017 -v ~/mongo-data:/data/db mongo'
