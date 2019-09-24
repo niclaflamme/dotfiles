@@ -51,5 +51,5 @@ alias inv='cd ~/invivo/code'
 alias ind='cd ~/indivity'
 
 # DOCKER
-alias start-docker='systemctl start docker'
-alias docker-mongo='docker run -d --name mongo-local -p 27017:27017 -v ~/mongo-data:/data/db mongo'
+alias start-docker='sudo systemctl start docker'
+alias docker-mongo='sudo docker run -d --name mongo-local -p 27017:27017 -v ~/mongo-data:/data/db mongo'
