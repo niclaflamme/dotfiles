@@ -276,6 +276,7 @@ Plug 'bronson/vim-trailing-whitespace'
 
 " Language Support
 Plug 'pangloss/vim-javascript'
+  let g:javascript_plugin_flow = 1
 Plug 'mxw/vim-jsx'
 Plug 'elmcast/elm-vim'
   let g:elm_format_autosave = 1
