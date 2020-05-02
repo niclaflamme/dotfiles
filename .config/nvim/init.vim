@@ -242,11 +242,14 @@ else
   Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
 endif
 
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
 " Plug 'valloric/youcompleteme'
 
 
 " Auto close paren pairs
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 
 " Status bar styling
 Plug 'vim-airline/vim-airline'
