@@ -308,6 +308,8 @@ Plug 'fatih/vim-go'
 Plug 'tpope/vim-markdown'
 Plug 'cespare/vim-toml'
 Plug 'groenewege/vim-less'
+Plug 'rust-lang/rust.vim'
+  let g:rustfmt_autosave = 1
 
 " Split autoscaling
 Plug 'roman/golden-ratio'

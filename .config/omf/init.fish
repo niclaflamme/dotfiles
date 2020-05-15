@@ -17,6 +17,10 @@ alias sshcp='xclip -sel clip < ~/.ssh/id_rsa.pub'
 alias notes='cd ~/notes; and ll'
 
 
+# WIRETAP
+alias wire='cd ~/wiretap'
+
+
 # DOTFILES
 alias dot='cd ~/dotfiles'
 alias dotgit='git --git-dir ~/.dotfiles/.git --work-tree=$HOME'
