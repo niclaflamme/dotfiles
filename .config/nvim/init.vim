@@ -270,10 +270,11 @@ Plug 'kien/ctrlp.vim'
   let g:ctrlp_map = '<c-p>'
   let g:ctrlp_cmd = 'CtrlP'
   let g:ctrlp_working_path_mode = 'ra'
-  let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|.git\|elm-stuff|dist'
+  let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|.git\|elm-stuff|dist\|target'
   let g:ctrlp_show_hidden = 1
   " Recently opened buffers
   nmap <c-b> :CtrlPBuffer<Return>
+  nmap <leader>p <c-p>
 
 " Find in project -> `sudo apt-get install silversearcher-ag`
 Plug 'mileszs/ack.vim'
@@ -288,6 +289,7 @@ nnoremap <Leader>A :Ack! <C-r><C-w><CR>
 " Directory Tree
 Plug 'scrooloose/nerdtree'
   map <C-n> :NERDTreeToggle<CR>
+  nmap <leader>n <C-n>
 
 " Display Trailing WhiteSpace
 Plug 'bronson/vim-trailing-whitespace'
@@ -295,11 +297,15 @@ Plug 'bronson/vim-trailing-whitespace'
 " Language Support
 Plug 'pangloss/vim-javascript'
   let g:javascript_plugin_flow = 1
-Plug 'mxw/vim-jsx'
+Plug 'maxmellon/vim-jsx-pretty'
+Plugin 'prettier/vim-prettier'
+  let g:prettier#autoformat = 1
+  let g:prettier#autoformat_config_present = 1
 Plug 'elmcast/elm-vim'
   let g:elm_format_autosave = 1
-Plug 'leafgarland/typescript-vim'
-  let g:typescript_indent_disable = 1
+" Plug 'leafgarland/typescript-vim'
+"   let g:typescript_indent_disable = 1
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'flowtype/vim-flow'
   let g:flow#autoclose = 1
 Plug 'ekalinin/dockerfile.vim'
