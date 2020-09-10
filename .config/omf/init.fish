@@ -48,6 +48,8 @@ alias tmux='env TERM=xterm-256color tmux'
 
 # WORK DIRS
 alias savvy='cd ~/savvy'
+alias web='cd ~/savvy/savvy-webapp'
+alias api='cd ~/savvy/savvy-api'
 alias wire='cd ~/wiretap'
 
 # DOCKER
