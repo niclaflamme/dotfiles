@@ -17,10 +17,6 @@ alias sshcp='xclip -sel clip < ~/.ssh/id_rsa.pub'
 alias notes='cd ~/notes; and ll'
 
 
-# WIRETAP
-alias wire='cd ~/wiretap'
-
-
 # DOTFILES
 alias dot='cd ~/dotfiles'
 alias dotgit='git --git-dir ~/.dotfiles/.git --work-tree=$HOME'
@@ -51,8 +47,8 @@ alias tmux='env TERM=xterm-256color tmux'
 
 
 # WORK DIRS
-alias inv='cd ~/invivo/code'
-alias ind='cd ~/indivity'
+alias savvy='cd ~/savvy'
+alias wire='cd ~/wiretap'
 
 # DOCKER
 alias start-docker='sudo systemctl start docker'

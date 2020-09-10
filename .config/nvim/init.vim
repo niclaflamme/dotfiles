@@ -299,8 +299,7 @@ Plug 'pangloss/vim-javascript'
   let g:javascript_plugin_flow = 1
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'prettier/vim-prettier'
-  let g:prettier#autoformat = 1
-  let g:prettier#autoformat_config_present = 1
+  " let g:prettier#autoformat = 1
 Plug 'elmcast/elm-vim'
   let g:elm_format_autosave = 1
 " Plug 'leafgarland/typescript-vim'
