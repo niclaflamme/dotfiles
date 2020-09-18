@@ -274,7 +274,6 @@ Plug 'kien/ctrlp.vim'
   let g:ctrlp_show_hidden = 1
   " Recently opened buffers
   nmap <c-b> :CtrlPBuffer<Return>
-  nmap <leader>p <c-p>
 
 " Find in project -> `sudo apt-get install silversearcher-ag`
 Plug 'mileszs/ack.vim'
@@ -299,7 +298,7 @@ Plug 'pangloss/vim-javascript'
   let g:javascript_plugin_flow = 1
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'prettier/vim-prettier'
-  " let g:prettier#autoformat = 1
+  nmap <leader>p <Plug>(Prettier)
 Plug 'elmcast/elm-vim'
   let g:elm_format_autosave = 1
 " Plug 'leafgarland/typescript-vim'
