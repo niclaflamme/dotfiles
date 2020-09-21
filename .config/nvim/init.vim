@@ -126,6 +126,7 @@ set shiftwidth=2
 set autoindent
 set shiftround
 set softtabstop=2
+set cursorline
 
 " Clipboard
 vnoremap <leader>y "+y<Return>
@@ -234,22 +235,14 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
+
 let g:deoplete#enable_at_startup = 1
 
-if has('win32') || has('win64')
-  Plug 'tbodt/deoplete-tabnine', { 'do': 'powershell.exe .\install.ps1' }
-else
-  Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
-endif
+Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
 
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
-" Plug 'valloric/youcompleteme'
-
-
-" Auto close paren pairs
-" Plug 'jiangmiao/auto-pairs'
 
 " Status bar styling
 Plug 'vim-airline/vim-airline'
@@ -299,19 +292,10 @@ Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'prettier/vim-prettier'
   nmap <leader>p <Plug>(Prettier)
-Plug 'elmcast/elm-vim'
-  let g:elm_format_autosave = 1
-" Plug 'leafgarland/typescript-vim'
-"   let g:typescript_indent_disable = 1
 Plug 'HerringtonDarkholme/yats.vim'
-Plug 'flowtype/vim-flow'
-  let g:flow#autoclose = 1
 Plug 'ekalinin/dockerfile.vim'
 Plug 'digitaltoad/vim-jade'
-Plug 'fatih/vim-go'
 Plug 'tpope/vim-markdown'
-Plug 'cespare/vim-toml'
-Plug 'groenewege/vim-less'
 Plug 'rust-lang/rust.vim'
   let g:rustfmt_autosave = 1
 
@@ -324,15 +308,8 @@ Plug 'scrooloose/nerdcommenter'
   let g:NERDDefaultAlign = 'left'
   let g:NERDCommentEmptyLines = 1
 
-" Color - somehow this fixed my color problems
-Plug 'altercation/vim-colors-solarized'
-  set background=dark
 
 " To install packages, run command `:PlugInstall`
 call plug#end()
-
-" To get YCM autocompletion
-" cd ~/.config/nvim/plugged/YouCompleteMe
-" ./install.py
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
