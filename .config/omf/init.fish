@@ -48,9 +48,8 @@ alias tmux='env TERM=xterm-256color tmux'
 
 # WORK DIRS
 alias savvy='cd ~/savvy'
-alias webclient='cd ~/savvy/webclient'
+alias client='cd ~/savvy/webclient'
 alias api='cd ~/savvy/api'
-alias wire='cd ~/wiretap'
 
 # DOCKER
 alias start-docker='sudo systemctl start docker'
