@@ -47,12 +47,9 @@ set autoread
 let mapleader = ","
 let g:mapleader = ","
 
-" Single finger colon
-nmap <leader><leader> :
-
 " Fast saving
 nmap <leader>w :w!<cr>
-nmap <leader>W :wqa!<cr>
+nmap <leader>q :q<Return>
 
 set number
 
@@ -99,6 +96,7 @@ set magic
 
 " Show matching brackets when text indicator is over them
 set showmatch
+
 " How many tenths of a second to blink when matching brackets
 set mat=2
 
@@ -142,9 +140,6 @@ nmap <BS> :FixWhitespace<Return>:noh<Return>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Smart way to move between vertical windows
-map <C-j> <C-W>j
-map <C-l> <C-W>l
 
 " Split tabs bellow and right
 set splitbelow
@@ -152,11 +147,10 @@ set splitright
 
 " Quick horizontal split & quick tab close
 nmap <leader>s :vs<Return>
-nmap <leader>d :sp<Return>
-nmap <leader>q :q<Return>
 
 " Cycle tabs
 nmap <c-v> <C-W>w
+nmap <leader><leader> <C-W>w
 
 " Saving the shift key for :
 nmap ; :
@@ -218,11 +212,6 @@ nnoremap N Nzzzv
 " Map <Space> to / (search)
 map <space> /
 
-
-" Disable highlight when <leader><cr> is pressed
-map <silent> <leader><space> :noh<Return>
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins Config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -270,6 +259,7 @@ Plug 'kien/ctrlp.vim'
   let g:ctrlp_show_hidden = 1
   " Recently opened buffers
   nmap <c-b> :CtrlPBuffer<Return>
+  nmap <leader><space> <c-p>
 
 " Find in project -> `sudo apt-get install silversearcher-ag`
 Plug 'mileszs/ack.vim'
