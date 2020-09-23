@@ -132,6 +132,9 @@ set cursorline
 vnoremap <leader>y "+y<Return>
 nnoremap <leader>p "+p<Return>
 
+" Yank-all-file
+nmap yaf ggVG"+y
+
 " Remove trailing whitespace
 nmap <BS> :FixWhitespace<Return>:noh<Return>
 
