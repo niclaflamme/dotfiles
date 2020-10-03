@@ -149,8 +149,11 @@ set splitright
 nmap <leader>s :vs<Return>
 
 " Cycle tabs
-nmap <c-v> <C-W>w
 nmap <leader><leader> <C-W>w
+nmap <leader>1 1<c-w><c-w>
+nmap <leader>2 2<c-w><c-w>
+nmap <leader>3 4<c-w><c-w>
+nmap <leader>4 4<c-w><c-w>
 
 " Saving the shift key for :
 nmap ; :
@@ -250,16 +253,20 @@ Plug 'w0rp/ale'
 " Parens, brackets and curlies
 Plug 'tpope/vim-surround'
 
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l -g ""'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+  nnoremap <silent> <leader><space> :Files<CR>
+
 " Find filename
-Plug 'kien/ctrlp.vim'
-  let g:ctrlp_map = '<c-p>'
-  let g:ctrlp_cmd = 'CtrlP'
-  let g:ctrlp_working_path_mode = 'ra'
-  let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|.git\|elm-stuff|dist\|target'
-  let g:ctrlp_show_hidden = 1
-  " Recently opened buffers
-  nmap <c-b> :CtrlPBuffer<Return>
-  nmap <leader><space> <c-p>
+" Plug 'kien/ctrlp.vim'
+"   let g:ctrlp_map = '<leader><space>'
+"   let g:ctrlp_cmd = 'CtrlP'
+"   let g:ctrlp_working_path_mode = 'ra'
+"   let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|.git\|elm-stuff|dist\|target'
+"   let g:ctrlp_show_hidden = 1
+"   " Recently opened buffers
+"   nmap <leader-b> :CtrlPBuffer<Return>
 
 " Find in project -> `sudo apt-get install silversearcher-ag`
 Plug 'mileszs/ack.vim'
@@ -269,12 +276,10 @@ if executable('ag')
 endif
 cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack! ""<Left>
-nnoremap <Leader>A :Ack! <C-r><C-w><CR>
 
 " Directory Tree
-Plug 'scrooloose/nerdtree'
-  map <C-n> :NERDTreeToggle<CR>
-  nmap <leader>n <C-n>
+" Plug 'scrooloose/nerdtree'
+"   map <leader>n :NERDTreeToggle<CR>
 
 " Display Trailing WhiteSpace
 Plug 'bronson/vim-trailing-whitespace'
