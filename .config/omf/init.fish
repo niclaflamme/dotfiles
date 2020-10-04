@@ -1,6 +1,6 @@
 # GENERAL
 alias ll='ls -la'
-function cfile
+function toclipboard
     xclip -sel clip < $argv
 end
 function mcd
@@ -10,7 +10,7 @@ end
 
 # SSH
 alias ssha='ssh-add'
-alias sshcp='xclip -sel clip < ~/.ssh/id_rsa.pub'
+alias sshcopy='xclip -sel clip < ~/.ssh/id_rsa.pub'
 
 
 # NOTES
@@ -19,8 +19,7 @@ alias notes='cd ~/notes; and ll'
 
 # DOTFILES
 alias dot='cd ~/dotfiles'
-alias dotgit='git --git-dir ~/.dotfiles/.git --work-tree=$HOME'
-alias dotsync='dotgit reset --hard'
+alias dotv='dot; and v'
 
 
 # GIT
@@ -39,7 +38,6 @@ end
 # VIM
 alias vim="nvim"
 alias v='vim'
-alias vi='vim'
 
 
 # TMUX
@@ -48,9 +46,6 @@ alias tmux='env TERM=xterm-256color tmux'
 
 # WORK DIRS
 alias savvy='cd ~/savvy'
-alias client='cd ~/savvy/webclient'
+alias webclient='cd ~/savvy/webclient'
+alias client='client'
 alias api='cd ~/savvy/api'
-
-# DOCKER
-alias start-docker='sudo systemctl start docker'
-alias docker-mongo='sudo docker run -d --name mongo-local -p 27017:27017 -v ~/mongo-data:/data/db mongo'
