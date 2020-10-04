@@ -47,5 +47,5 @@ alias tmux='env TERM=xterm-256color tmux'
 # WORK DIRS
 alias savvy='cd ~/savvy'
 alias webclient='cd ~/savvy/webclient'
-alias client='client'
+alias client='webclient'
 alias api='cd ~/savvy/api'
