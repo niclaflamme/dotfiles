@@ -250,6 +250,12 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
   nnoremap <silent> <leader><space> :Files<CR>
 
+
+" Dir Tree
+Plug 'scrooloose/nerdtree'
+  map <leader>n :NERDTreeToggle<CR>
+
+
 " Active split auto-resizes to ~2/3 of screen
 " -- Ooohhh yeahhh
 Plug 'roman/golden-ratio'

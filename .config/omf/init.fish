@@ -20,7 +20,6 @@ alias notes='cd ~/notes; and ll'
 # DOTFILES
 alias dot='cd ~/dotfiles'
 alias dotv='dot; and v'
-alias dov='dotv'
 
 
 # GIT
