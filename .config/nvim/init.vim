@@ -10,14 +10,14 @@
 "
 " Sections:
 "     -> General
-"     -> VIM user interface
-"     -> Colors and Fonts
-"     -> Text, tab and indentation
+"     -> Colors
+"     -> Indentation and clipboard
 "     -> Moving around, tabs, windows and buffers
 "     -> Text, tab and indentation
 "     -> Status line
 "     -> Mapping overwrites
 "     -> Searching
+"
 "     -> Plugins
 "
 "
@@ -28,19 +28,19 @@
 "
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => General
+" => General - I don't even know what some of these do...
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Vundle does not work with fish shell
+" Plug might not work with fish shell - Invisible to user
 set shell=/bin/bash
 
-" Sets how manu lines VIM needs to remmember
+" Sets how many lines VIM needs to remmember
 set history=500
 
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
 
-" Set to autoread when a file is changed from outside
+" Autoread when a file is changed from outside
 set autoread
 
 " Leader remapping
@@ -56,10 +56,6 @@ set number
 " Prevent creation on .swp file on buffer close.
 set noswapfile
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => VIM user interface
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set a minimum 10 line padding to the cursor
 set so=10
 
@@ -68,6 +64,7 @@ set wildmenu
 
 " Always show ruler
 set ruler
+set colorcolumn=80
 
 " Height of the command bar
 set cmdheight=1
@@ -77,9 +74,8 @@ set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
 " Ignore case when searching
+" - try to be smart about cases as fallback
 set ignorecase
-
-" When searching try to be smart about cases
 set smartcase
 
 " Highlight search results
@@ -98,14 +94,14 @@ set magic
 set showmatch
 
 " How many tenths of a second to blink when matching brackets
-set mat=2
+set mat=3
 
 " Set visual bell on error
 set visualbell
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Colors and Fonts
+" => Colors
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
 syntax on
@@ -115,7 +111,7 @@ set encoding=utf8
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Text, tab key and indentation
+" => Indentation and clipboard
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
 set expandtab
@@ -127,14 +123,13 @@ set softtabstop=2
 set cursorline
 
 " Clipboard
+" -- Copy to and Paste-from system's clipboard
 vnoremap <leader>y "+y<Return>
 nnoremap <leader>p "+p<Return>
 
 " Yank-all-file
+" -- Get all the file's content in yank
 nmap yaf ggVG"+y
-
-" Remove trailing whitespace
-nmap <BS> :FixWhitespace<Return>:noh<Return>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -142,31 +137,34 @@ nmap <BS> :FixWhitespace<Return>:noh<Return>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Split tabs bellow and right
+" -- Provides consistent window splitting behavior
 set splitbelow
 set splitright
 
 " Quick horizontal split & quick tab close
+" -- I never split horizontally which is why there is no :sp shortcuts
 nmap <leader>s :vs<Return>
 
-" Cycle tabs
+" Cycle tabs.
+" -- LEFT to RIGHT
 nmap <leader><leader> <C-W>w
+
+" Go to tab number
+" -- You shouldn't have more than 4 tabs open at once.
 nmap <leader>1 1<c-w><c-w>
 nmap <leader>2 2<c-w><c-w>
 nmap <leader>3 4<c-w><c-w>
 nmap <leader>4 4<c-w><c-w>
 
-" Saving the shift key for :
+" Like colon, without the shift (; works as :)
+" - Rationale, I never user the semicolon
 nmap ; :
 
-" Scroll according to visual line
+" Scroll according to visual-line not file-line
 nnoremap j gj
 nnoremap k gk
 
-" Move to line edge
-nnoremap H j
-nnoremap L $
-
-" Extra scrolling speed
+" Extra-fast vertical navigation (6x)
 nmap <c-k> 6k6<c-Y>
 nmap <c-j> 6j6<c-E>
 
@@ -182,18 +180,6 @@ set showcmd
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Mapping overwrites
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Typo prevention on exit
-command! Q q
-command! QA qa
-command! Qa qa
-
-command! W w
-command! WQ wq
-command! Wq wq
-command! WQA wqa
-command! WQa wqa
-command! Wqa wqa
-
 " Disabled commands
 nmap Q <nop>
 nmap q <nop>
@@ -202,6 +188,7 @@ nnoremap <Down> <nop>
 nnoremap <Left> <nop>
 nnoremap <Right> <nop>
 
+" Sort highlighted lines in visual mode
 vmap <leader><leader> :sort<Return>
 
 
@@ -215,10 +202,10 @@ nnoremap N Nzzzv
 " Map <Space> to / (search)
 map <space> /
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins Config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"  Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
 
 
@@ -233,42 +220,50 @@ endif
 
 let g:deoplete#enable_at_startup = 1
 
+" A.I. powered autocomplete engine
 Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
-
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+  inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 
 " Status bar styling
 Plug 'vim-airline/vim-airline'
 
+
 " Git integration
+" -- I don't know why I have this
 Plug 'tpope/vim-fugitive'
+
 
 " Linting
 Plug 'w0rp/ale'
   let g:ale_sign_error = '>>'
   let g:ale_sign_warning = '--'
 
+
 " Parens, brackets and curlies
 Plug 'tpope/vim-surround'
 
+
+" Fuzzy-find Files
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l -g ""'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
   nnoremap <silent> <leader><space> :Files<CR>
 
-" Find filename
-" Plug 'kien/ctrlp.vim'
-"   let g:ctrlp_map = '<leader><space>'
-"   let g:ctrlp_cmd = 'CtrlP'
-"   let g:ctrlp_working_path_mode = 'ra'
-"   let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|.git\|elm-stuff|dist\|target'
-"   let g:ctrlp_show_hidden = 1
-"   " Recently opened buffers
-"   nmap <leader-b> :CtrlPBuffer<Return>
+" Active split auto-resizes to ~2/3 of screen
+" -- Ooohhh yeahhh
+Plug 'roman/golden-ratio'
 
-" Find in project -> `sudo apt-get install silversearcher-ag`
+
+" Comments
+Plug 'scrooloose/nerdcommenter'
+  let g:NERDSpaceDelims = 1
+  let g:NERDDefaultAlign = 'left'
+  let g:NERDCommentEmptyLines = 1
+
+
+" Find in project
+" -- Must install silversearcher-ag on system
 Plug 'mileszs/ack.vim'
 " replace ack with ag
 if executable('ag')
@@ -277,34 +272,44 @@ endif
 cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack! ""<Left>
 
-" Directory Tree
-" Plug 'scrooloose/nerdtree'
-"   map <leader>n :NERDTreeToggle<CR>
 
 " Display Trailing WhiteSpace
+" -- Bonus:
+" ---- Remove all trailing whitespace with <BS>
+" ---- Also removes search (/)
 Plug 'bronson/vim-trailing-whitespace'
+  nmap <BS> :FixWhitespace<Return>:noh<Return>
 
-" Language Support
+
+" Javascript
 Plug 'pangloss/vim-javascript'
   let g:javascript_plugin_flow = 1
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'prettier/vim-prettier'
   nmap <leader>p <Plug>(Prettier)
+
+
+" TypeScript
 Plug 'HerringtonDarkholme/yats.vim'
+
+
+" Docker
 Plug 'ekalinin/dockerfile.vim'
+
+
+" Pug / Jade
 Plug 'digitaltoad/vim-jade'
+
+
+" Markdown
 Plug 'tpope/vim-markdown'
+
+
+" Rust
 Plug 'rust-lang/rust.vim'
   let g:rustfmt_autosave = 1
+Plug 'cespare/vim-toml'
 
-" Split autoscaling
-Plug 'roman/golden-ratio'
-
-" Comments
-Plug 'scrooloose/nerdcommenter'
-  let g:NERDSpaceDelims = 1
-  let g:NERDDefaultAlign = 'left'
-  let g:NERDCommentEmptyLines = 1
 
 
 " To install packages, run command `:PlugInstall`
