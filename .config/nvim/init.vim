@@ -245,10 +245,9 @@ Plug 'tpope/vim-surround'
 
 
 " Fuzzy-find Files
-let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l -g ""'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-  nnoremap <silent> <leader><f> :Files<CR>
+Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
+  let g:Lf_WindowPosition = 'popup'
+  let g:Lf_PreviewInPopup = 1
 
 
 " Dir Tree
@@ -259,6 +258,10 @@ Plug 'scrooloose/nerdtree'
 " Active split auto-resizes to ~2/3 of screen
 " -- Ooohhh yeahhh
 Plug 'roman/golden-ratio'
+
+" Color scheme
+Plug 'morhetz/gruvbox'
+  :set bg=dark
 
 
 " Comments
@@ -271,12 +274,12 @@ Plug 'scrooloose/nerdcommenter'
 " Find in project
 " -- Must install silversearcher-ag on system
 Plug 'mileszs/ack.vim'
-" replace ack with ag
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
-cnoreabbrev Ack Ack!
-nnoremap <leader><space> :Ack! ""<Left>
+  if executable('ag')
+    let g:ackprg = 'ag --vimgrep'
+  endif
+  cnoreabbrev Ack Ack!
+  nnoremap <leader><space> :Ack! ""<Left>
+  nnoremap <leader>a :Ack! <C-r><C-w><CR>
 
 
 " Display Trailing WhiteSpace
