@@ -248,7 +248,7 @@ Plug 'tpope/vim-surround'
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l -g ""'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-  nnoremap <silent> <leader><space> :Files<CR>
+  nnoremap <silent> <leader><f> :Files<CR>
 
 
 " Dir Tree
@@ -276,7 +276,7 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 cnoreabbrev Ack Ack!
-nnoremap <Leader>a :Ack! ""<Left>
+nnoremap <leader><space> :Ack! ""<Left>
 
 
 " Display Trailing WhiteSpace
