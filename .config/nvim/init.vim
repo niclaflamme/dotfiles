@@ -244,13 +244,15 @@ Plug 'tpope/vim-surround'
 
 
 " Fuzzy-find Files
-Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
-  let g:Lf_WindowPosition = 'popup'
-  let g:Lf_PreviewInPopup = 1
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --path-to-ignore ~/.ignore -g ""'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+  nmap <leader>f :Files<CR>
 
 
 " Dir Tree
 Plug 'scrooloose/nerdtree'
+  let NERDTreeShowHidden=1
   map <leader>n :NERDTreeToggle<CR>
 
 
@@ -260,7 +262,7 @@ Plug 'roman/golden-ratio'
 
 " Color scheme
 Plug 'morhetz/gruvbox'
-  :set bg=dark
+  set bg=dark
 
 
 " Comments
