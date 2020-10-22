@@ -252,7 +252,6 @@ Plug 'junegunn/fzf.vim'
 
 " Dir Tree
 Plug 'scrooloose/nerdtree'
-  let NERDTreeShowHidden=1
   map <leader>n :NERDTreeToggle<CR>
 
 
