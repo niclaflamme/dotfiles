@@ -288,6 +288,9 @@ Plug 'mileszs/ack.vim'
 Plug 'bronson/vim-trailing-whitespace'
   nmap <BS> :FixWhitespace<Return>:noh<Return>
 
+" Create new directories within vim with :Mkdir
+Plug 'tpope/vim-eunuch'
+
 
 " Javascript
 Plug 'pangloss/vim-javascript'
