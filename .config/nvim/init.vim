@@ -223,8 +223,6 @@ endif
 Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
   inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 " Status bar styling
 Plug 'vim-airline/vim-airline'
 
