@@ -131,6 +131,9 @@ nnoremap <leader>p "+p<Return>
 " -- Get all the file's content in yank
 nmap yaf ggVG"+y
 
+" Format-all-file
+nmap faf ggVG=
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Moving around, tabs, windows and buffers
@@ -240,6 +243,7 @@ Plug 'w0rp/ale'
 
 " Parens, brackets and curlies
 Plug 'tpope/vim-surround'
+Plug 'raimondi/delimitmate'
 
 
 " Fuzzy-find Files
