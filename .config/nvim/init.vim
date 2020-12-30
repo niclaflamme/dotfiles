@@ -284,7 +284,7 @@ Plug 'mileszs/ack.vim'
     let g:ackprg = 'ag --vimgrep'
   endif
   cnoreabbrev Ack Ack!
-  nnoremap <leader><space> :Ack! ""<Left>
+  nnoremap <leader><space> :Ack! -Q ""<Left>
 
 
 " Display Trailing WhiteSpace
