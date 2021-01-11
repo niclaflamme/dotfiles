@@ -246,7 +246,6 @@ Plug 'w0rp/ale'
 
 " Parens, brackets and curlies
 Plug 'tpope/vim-surround'
-Plug 'raimondi/delimitmate'
 
 
 " Fuzzy-find Files
