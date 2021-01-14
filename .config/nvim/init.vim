@@ -132,7 +132,7 @@ nnoremap <leader>p "+p<Return>
 nmap yaf ggVG"+y
 
 " Format-all-file
-nmap faf ggVG=
+nmap faf ggVG=<C-o>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
