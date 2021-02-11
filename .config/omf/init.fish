@@ -47,10 +47,5 @@ alias tmux='env TERM=xterm-256color tmux'
 
 # WORK DIRS
 alias savvy='cd ~/savvy'
-alias sclient='cd ~/savvy/webclient'
-alias sapi='cd ~/savvy/api'
 
-alias hostage='cd ~/hostagefund'
-alias hostagefund='cd ~/hostagefund'
-alias hbackend='cd ~/hostagefund/backend'
-alias hclient='cd ~/hostagefund/client'
+alias hf='cd ~/hostagefund'
