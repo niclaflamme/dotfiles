@@ -47,5 +47,9 @@ alias tmux='env TERM=xterm-256color tmux'
 
 # WORK DIRS
 alias savvy='cd ~/savvy'
+alias savvyapi='cd ~/savvy/api'
+alias savvyclient='cd ~/savvy/client'
 
 alias hf='cd ~/hostagefund'
+alias hfclient='cd ~/hostagefund/client'
+alias hfapi='cd ~/hostagefund/backend'
