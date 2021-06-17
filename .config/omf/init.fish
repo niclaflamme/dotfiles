@@ -45,11 +45,18 @@ alias v='vim'
 alias tmux='env TERM=xterm-256color tmux'
 
 
-# WORK DIRS
-alias savvy='cd ~/savvy'
-alias savvyapi='cd ~/savvy/api'
-alias savvyclient='cd ~/savvy/client'
-
 alias hf='cd ~/hostagefund'
+
+alias hfapi='cd ~/hostagefund/api'
 alias hfclient='cd ~/hostagefund/client'
-alias hfapi='cd ~/hostagefund/backend'
+alias hffire='cd ~/hostagefund/firebase'
+
+alias bliinx='cd ~/bliinx'
+alias bapi='cd ~/bliinx/api'
+alias bconn='cd ~/bliinx/connectors'
+alias bdash='cd ~/bliinx/dashboard'
+alias bsync='cd ~/bliinx/sync'
+
+# G-utils
+:white_square: Get most urgent task assignment from Jaec
+if [ -f '/Users/niclaflamme/Desktop/google-cloud-sdk/path.fish.inc' ]; . '/Users/niclaflamme/Desktop/google-cloud-sdk/path.fish.inc'; end
