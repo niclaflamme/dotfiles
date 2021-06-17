@@ -58,5 +58,4 @@ alias bdash='cd ~/bliinx/dashboard'
 alias bsync='cd ~/bliinx/sync'
 
 # G-utils
-:white_square: Get most urgent task assignment from Jaec
 if [ -f '/Users/niclaflamme/Desktop/google-cloud-sdk/path.fish.inc' ]; . '/Users/niclaflamme/Desktop/google-cloud-sdk/path.fish.inc'; end
