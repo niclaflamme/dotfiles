@@ -57,5 +57,8 @@ alias bconn='cd ~/bliinx/connectors'
 alias bdash='cd ~/bliinx/dashboard'
 alias bsync='cd ~/bliinx/sync'
 
+alias bliinxstaging='~/.bin/bliinxstaging'
+alias bliinxprod='~/.bin/bliinxprod'
+
 # G-utils
 if [ -f '/Users/niclaflamme/Desktop/google-cloud-sdk/path.fish.inc' ]; . '/Users/niclaflamme/Desktop/google-cloud-sdk/path.fish.inc'; end
