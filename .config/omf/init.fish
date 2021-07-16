@@ -51,14 +51,8 @@ alias hfapi='cd ~/hostagefund/api'
 alias hfclient='cd ~/hostagefund/client'
 alias hffire='cd ~/hostagefund/firebase'
 
-alias bliinx='cd ~/bliinx'
-alias bapi='cd ~/bliinx/api'
-alias bconn='cd ~/bliinx/connectors'
-alias bdash='cd ~/bliinx/dashboard'
-alias bsync='cd ~/bliinx/sync'
+alias cadoo='cd ~/cadoo'
 
-alias bliinxstaging='~/.bin/bliinxstaging'
-alias bliinxprod='~/.bin/bliinxprod'
 
 # G-utils
 if [ -f '/Users/niclaflamme/Desktop/google-cloud-sdk/path.fish.inc' ]; . '/Users/niclaflamme/Desktop/google-cloud-sdk/path.fish.inc'; end

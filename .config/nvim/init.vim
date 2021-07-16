@@ -309,6 +309,10 @@ Plug 'prettier/vim-prettier'
 Plug 'HerringtonDarkholme/yats.vim'
 
 
+" Prisma ORM
+Plug 'pantharshit00/vim-prisma'
+
+
 " Docker
 Plug 'ekalinin/dockerfile.vim'
 
