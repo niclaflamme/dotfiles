@@ -335,6 +335,8 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'mhinz/vim-mix-format'
   let g:mix_format_on_save = 1
 
+" GoLang
+Plug 'fatih/vim-go'
 
 
 " To install packages, run command `:PlugInstall`
