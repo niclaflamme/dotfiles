@@ -122,6 +122,8 @@ set shiftround
 set softtabstop=2
 set cursorline
 
+set tabstop=4
+
 " Clipboard
 " -- Copy to and Paste-from system's clipboard
 vnoremap <leader>y "+y<Return>
