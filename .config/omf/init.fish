@@ -52,7 +52,7 @@ alias hfclient='cd ~/hostagefund/client'
 alias hffire='cd ~/hostagefund/firebase'
 
 alias cadoo='cd ~/cadoo'
-alias capi='cd ~/cadoo/api'
+alias ledger='cd ~/cadoo/ledger'
 
 
 # G-utils
