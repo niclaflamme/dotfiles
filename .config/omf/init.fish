@@ -37,7 +37,7 @@ end
 
 
 # VIM
-alias vim="nvim"
+# alias vim="nvim"
 alias v='vim'
 
 
@@ -46,7 +46,6 @@ alias tmux='env TERM=xterm-256color tmux'
 
 
 alias hf='cd ~/hostagefund'
-
 alias hfapi='cd ~/hostagefund/api'
 alias hfclient='cd ~/hostagefund/client'
 alias hffire='cd ~/hostagefund/firebase'
