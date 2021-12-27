@@ -225,7 +225,7 @@ call plug#begin('~/.vim/plugged')
 "   let g:deoplete#enable_at_startup = 1
 
 " Autocomplete
-Plug 'tabnine/YouCompleteMe'
+Plug 'valloric/youcompleteme'
 
 " Status bar styling
 Plug 'vim-airline/vim-airline'
