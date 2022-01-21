@@ -53,6 +53,10 @@ alias hffire='cd ~/hostagefund/firebase'
 alias cadoo='cd ~/cadoo'
 alias led='cd ~/cadoo/ledger'
 
+alias origami='cd ~/origami/code'
+alias gami='cd ~/origami/code'
+alias otter='cd ~/origami/code/otter'
+
 
 # G-utils
 if [ -f '/Users/niclaflamme/Desktop/google-cloud-sdk/path.fish.inc' ]; . '/Users/niclaflamme/Desktop/google-cloud-sdk/path.fish.inc'; end
