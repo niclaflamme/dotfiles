@@ -56,6 +56,7 @@ alias led='cd ~/cadoo/ledger'
 alias origami='cd ~/origami/code'
 alias gami='cd ~/origami/code'
 alias otter='cd ~/origami/code/otter'
+alias panda='cd ~/origami/code/panda'
 
 
 # G-utils
