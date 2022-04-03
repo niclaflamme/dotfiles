@@ -45,19 +45,10 @@ alias v='vim'
 alias tmux='env TERM=xterm-256color tmux'
 
 
-alias hf='cd ~/hostagefund'
-alias hfapi='cd ~/hostagefund/api'
-alias hfclient='cd ~/hostagefund/client'
-alias hffire='cd ~/hostagefund/firebase'
-
-alias cadoo='cd ~/cadoo'
-alias led='cd ~/cadoo/ledger'
-
-alias origami='cd ~/origami/code'
 alias gami='cd ~/origami/code'
+alias axo='cd ~/origami/code/axolotl'
+alias kaka='cd ~/origami/code/kakapo'
 alias otter='cd ~/origami/code/otter'
-alias gecko='cd ~/origami/code/gecko'
-alias starfish='cd ~/origami/code/starfish'
 
 
 # G-utils
