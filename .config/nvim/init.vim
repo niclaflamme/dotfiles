@@ -336,6 +336,9 @@ Plug 'mhinz/vim-mix-format'
 " GoLang
 Plug 'fatih/vim-go'
 
+" Firestore
+Plug 'delphinus/vim-firestore'
+
 
 " To install packages, run command `:PlugInstall`
 call plug#end()

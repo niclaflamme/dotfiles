@@ -49,6 +49,7 @@ alias gami='cd ~/origami/code'
 alias axo='cd ~/origami/code/axolotl'
 alias kaka='cd ~/origami/code/kakapo'
 alias otter='cd ~/origami/code/otter'
+alias clown='cd ~/origami/code/clownfish'
 
 
 # G-utils

@@ -339,6 +339,10 @@ Plug 'mhinz/vim-mix-format'
 Plug 'fatih/vim-go'
 
 
+" Firestore
+Plug 'delphinus/vim-firestore'
+
+
 " Flutter
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'thosakwe/vim-flutter'
