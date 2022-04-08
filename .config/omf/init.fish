@@ -37,7 +37,7 @@ end
 
 
 # VIM
-# alias vim="nvim"
+alias vim="nvim"
 alias v='vim'
 
 
