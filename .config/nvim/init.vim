@@ -264,11 +264,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 
 
-" Git integration
-" -- I don't know why I have this
-Plug 'tpope/vim-fugitive'
-
-
 " Linting
 Plug 'w0rp/ale'
   let g:ale_sign_error = '>>'
@@ -328,8 +323,11 @@ Plug 'tpope/vim-eunuch'
 Plug 'pangloss/vim-javascript'
   let g:javascript_plugin_flow = 1
 Plug 'maxmellon/vim-jsx-pretty'
+
+
+" Prettier
 Plug 'prettier/vim-prettier'
-  nmap <leader>p <Plug>(Prettier)
+  nmap <leader>p :Prettier<Return>
 
 
 " TypeScript
