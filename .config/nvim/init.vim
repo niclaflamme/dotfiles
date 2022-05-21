@@ -355,6 +355,7 @@ Plug 'rust-lang/rust.vim'
   let g:rustfmt_autosave = 1
 Plug 'cespare/vim-toml'
 
+
 " Elixir
 Plug 'elixir-editors/vim-elixir'
 Plug 'mhinz/vim-mix-format'
@@ -363,6 +364,10 @@ Plug 'mhinz/vim-mix-format'
 
 " Firestore
 Plug 'delphinus/vim-firestore'
+
+
+" Fish shell
+Plug 'dag/vim-fish'
 
 
 " To install packages, run command `:PlugInstall`

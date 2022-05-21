@@ -52,5 +52,5 @@ alias otter='cd ~/origami/code/otter'
 alias clown='cd ~/origami/code/clownfish'
 
 
-# G-utils
-if [ -f '/Users/niclaflamme/Desktop/google-cloud-sdk/path.fish.inc' ]; . '/Users/niclaflamme/Desktop/google-cloud-sdk/path.fish.inc'; end
+# scrcpy
+alias droid='scrcpy'
