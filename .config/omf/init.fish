@@ -50,6 +50,7 @@ alias axo='cd ~/origami/code/axolotl'
 alias kaka='cd ~/origami/code/kakapo'
 alias otter='cd ~/origami/code/otter'
 alias clown='cd ~/origami/code/clownfish'
+alias dashb='cd ~/origami/code/dashboard'
 
 
 # scrcpy
