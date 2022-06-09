@@ -258,7 +258,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
   " format on enter, <cr> could be remapped by other vim plugin
   inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                                 \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
- 
+
 
 " Copilot
 Plug 'github/copilot.vim'
@@ -354,6 +354,7 @@ Plug 'tpope/vim-markdown'
 Plug 'rust-lang/rust.vim'
   let g:rustfmt_autosave = 1
 Plug 'cespare/vim-toml'
+
 
 " Elixir
 Plug 'elixir-editors/vim-elixir'

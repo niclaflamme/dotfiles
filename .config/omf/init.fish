@@ -43,6 +43,9 @@ alias v='vim'
 
 # TMUX
 alias tmux='env TERM=xterm-256color tmux'
+alias tm='tmux'
+alias tma='tmux attach'
+alias tml='tmux list-sessions'
 
 
 alias gami='cd ~/origami/code'
@@ -50,7 +53,8 @@ alias axo='cd ~/origami/code/axolotl'
 alias kaka='cd ~/origami/code/kakapo'
 alias otter='cd ~/origami/code/otter'
 alias clown='cd ~/origami/code/clownfish'
+alias dashb='cd ~/origami/code/dashboard'
 
 
-# G-utils
-if [ -f '/Users/niclaflamme/Desktop/google-cloud-sdk/path.fish.inc' ]; . '/Users/niclaflamme/Desktop/google-cloud-sdk/path.fish.inc'; end
+# scrcpy
+alias droid='scrcpy'
