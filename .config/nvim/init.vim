@@ -365,6 +365,11 @@ Plug 'mhinz/vim-mix-format'
 Plug 'delphinus/vim-firestore'
 
 
+" Fish
+Plug 'dag/vim-fish'
+
+
+
 " To install packages, run command `:PlugInstall`
 call plug#end()
 
