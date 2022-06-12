@@ -1,10 +1,10 @@
 # GENERAL
 alias ll='ls -la'
 function toclipboard
-    xclip -sel clip < $argv
+  xclip -sel clip < $argv
 end
 function mcd
-    mkdir $argv; and cd $argv
+  mkdir $argv; and cd $argv
 end
 
 
@@ -32,7 +32,7 @@ alias gti='git'
 alias ggit='git'
 # GIT (FUNCTIONS)
 function gitsquash
-    git reset --soft HEAD~$argv
+  git reset --soft HEAD~$argv
 end
 
 
@@ -48,12 +48,11 @@ alias tma='tmux attach'
 alias tml='tmux list-sessions'
 
 
+# ORIGAMI
 alias gami='cd ~/origami/code'
-alias axo='cd ~/origami/code/axolotl'
-alias kaka='cd ~/origami/code/kakapo'
-alias otter='cd ~/origami/code/otter'
-alias clown='cd ~/origami/code/clownfish'
-alias dashb='cd ~/origami/code/dashboard'
+alias tablet='cd ~/origami/code/tablet'
+alias dashboard='cd ~/origami/code/dashboard'
+alias backend='cd ~/origami/code/backend'
 
 
 # scrcpy
