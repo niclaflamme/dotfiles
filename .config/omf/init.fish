@@ -50,9 +50,9 @@ alias tml='tmux list-sessions'
 
 # ORIGAMI
 alias gami='cd ~/origami/code'
-alias tablet='cd ~/origami/code/tablet'
-alias dashboard='cd ~/origami/code/dashboard'
+alias pos='cd ~/origami/code/pos'
 alias backend='cd ~/origami/code/backend'
+alias dashboard='cd ~/origami/code/dashboard'
 
 
 # scrcpy
