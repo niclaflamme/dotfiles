@@ -11,8 +11,13 @@
         wip = commit -m 'wip' -n
 [user]
 	email = nic@laflamme.io
-	name = niclaflamme
+	name = Nic Laflamme
 [core]
 	editor = nvim
 [push]
 	default = simple
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

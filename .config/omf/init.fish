@@ -55,5 +55,11 @@ alias backend='cd ~/origami/code/backend'
 alias dashboard='cd ~/origami/code/dashboard'
 
 
+# YARN
+alias ysd='yarn start:dev'
+alias ys='yarn start'
+alias yi='yarn install'
+
+
 # scrcpy
 alias droid='scrcpy'
