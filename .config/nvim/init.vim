@@ -367,6 +367,9 @@ Plug 'delphinus/vim-firestore'
 Plug 'dag/vim-fish'
 
 
+" GraphQL
+Plug 'jparise/vim-graphql'
+
 
 " To install packages, run command `:PlugInstall`
 call plug#end()
