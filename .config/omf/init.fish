@@ -49,10 +49,9 @@ alias tml='tmux list-sessions'
 
 
 # ORIGAMI
-alias gami='cd ~/origami/code'
+alias api='cd ~/origami/code/api'
 alias boom='cd ~/origami/code/boomerang'
-alias backend='cd ~/origami/code/backend'
-alias dashboard='cd ~/origami/code/dashboard'
+alias gami='cd ~/origami/code'
 
 
 # YARN
