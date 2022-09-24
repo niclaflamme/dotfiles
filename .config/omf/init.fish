@@ -49,10 +49,10 @@ alias tml='tmux list-sessions'
 
 
 # ORIGAMI
+alias gami='cd ~/origami/code'
 alias api='cd ~/origami/code/api'
 alias boom='cd ~/origami/code/boomerang'
-alias gami='cd ~/origami/code'
-alias rando='cd ~/origami/rando'
+alias rando='cd ~/origami/code/rando'
 alias tunnel="loclx tunnel http --reserved-domain 'origami.nic.loclx.io'"
 
 
