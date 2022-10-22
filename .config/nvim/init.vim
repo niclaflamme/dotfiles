@@ -84,7 +84,7 @@ set wildmenu
 
 " Always show ruler
 set ruler
-set colorcolumn=80
+set colorcolumn=90
 
 " Height of the command bar
 set cmdheight=1
