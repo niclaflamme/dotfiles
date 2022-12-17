@@ -260,6 +260,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
                                 \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 
+" Git
+Plug 'tpope/vim-fugitive'
+
 
 " Status bar styling
 Plug 'vim-airline/vim-airline'
