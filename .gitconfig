@@ -1,5 +1,5 @@
 [alias]
-        aa = add .
+    aa = add .
 	br = branch
 	ci = commit
 	co = checkout
@@ -7,8 +7,8 @@
 	hist = log --pretty=format:%h
 	last = log -1 HEAD
 	st = status
-        psuh = push
-        wip = commit -m 'wip' -n
+    psuh = push
+    wip = commit -m 'wip' -n
 [user]
 	email = nic@laflamme.io
 	name = Nic Laflamme
@@ -16,6 +16,7 @@
 	editor = nvim
 [push]
 	default = simple
+    autoSetupRemote = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
