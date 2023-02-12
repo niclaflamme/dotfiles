@@ -367,6 +367,9 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'mhinz/vim-mix-format'
   let g:mix_format_on_save = 1
 
+" Swift
+Plug 'keith/swift.vim'
+
 
 " Firestore
 Plug 'delphinus/vim-firestore'
