@@ -293,6 +293,7 @@ Plug 'junegunn/fzf.vim'
 
 " Dir Tree
 Plug 'scrooloose/nerdtree'
+  let g:NERDTreeWinSize=50
   map <leader>n :NERDTreeToggle<CR>
 
 
@@ -369,6 +370,7 @@ Plug 'mhinz/vim-mix-format'
 
 " Swift
 Plug 'keith/swift.vim'
+Plug 'tokorom/vim-swift-format'
 
 
 " Firestore
