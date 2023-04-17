@@ -52,15 +52,10 @@ alias tml='tmux list-sessions'
 alias gami='cd ~/origami/code'
 alias api='cd ~/origami/code/api'
 alias boom='cd ~/origami/code/boomerang'
-alias rando='cd ~/origami/code/rando'
-alias tunnel="loclx tunnel http --reserved-domain 'origami.nic.loclx.io'"
+alias wizzy='cd ~/origami/code/wizard'
 
 
 # YARN
 alias ysd='yarn start:dev'
 alias ys='yarn start'
 alias yi='yarn install'
-
-
-# scrcpy
-alias droid='scrcpy'
