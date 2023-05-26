@@ -52,6 +52,7 @@ alias tml='tmux list-sessions'
 alias gami='cd ~/origami/code'
 alias api='cd ~/origami/code/api'
 alias boom='cd ~/origami/code/boomerang'
+alias pocket='cd ~/origami/code/boomerang-pocket-ios'
 alias wizzy='cd ~/origami/code/wizard'
 
 
