@@ -53,7 +53,7 @@ alias gami='cd ~/origami/code'
 alias api='cd ~/origami/code/api'
 alias boom='cd ~/origami/code/boomerang'
 alias boombox='cd ~/origami/code/boombox'
-alias pocket='cd ~/origami/code/boomerang-pocket-ios'
+alias pocket='cd ~/origami/code/pocket'
 alias wizzy='cd ~/origami/code/wizard'
 alias gamifire = 'cd ~/origami/code/firebase'
 
