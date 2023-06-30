@@ -65,3 +65,5 @@ alias desky='cd ~/Desktop'
 alias ysd='yarn start:dev'
 alias ys='yarn start'
 alias yi='yarn install'
+
+set -gx PATH ~/.cargo/bin $PATH
