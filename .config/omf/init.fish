@@ -1,5 +1,6 @@
 # GENERAL
 alias ll='ls -la'
+
 function toclipboard
   xclip -sel clip < $argv
 end
@@ -30,6 +31,7 @@ alias gp='git pull'
 alias gitwip='git add .; and git commit -m "wip" -n'
 alias gti='git'
 alias ggit='git'
+
 # GIT (FUNCTIONS)
 function gitsquash
   git reset --soft HEAD~$argv
@@ -55,7 +57,9 @@ alias boom='cd ~/origami/code/boomerang'
 alias boombox='cd ~/origami/code/boombox'
 alias pocket='cd ~/origami/code/pocket'
 alias wizzy='cd ~/origami/code/wizard'
-alias gamifire = 'cd ~/origami/code/firebase'
+alias gamifire='cd ~/origami/code/firebase'
+
+alias icloud='cd /Library/Mobile Documents/com~apple~CloudDocs/code'
 
 # SHORTCUTS
 alias desky='cd ~/Desktop'
@@ -65,5 +69,7 @@ alias desky='cd ~/Desktop'
 alias ysd='yarn start:dev'
 alias ys='yarn start'
 alias yi='yarn install'
+
+
 
 set -gx PATH ~/.cargo/bin $PATH
