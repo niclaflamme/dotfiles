@@ -51,7 +51,6 @@ alias tml='tmux list-sessions'
 
 
 # ORIGAMI
-alias gami='cd ~/origami/code'
 alias api='cd ~/origami/code/api'
 alias boom='cd ~/origami/code/boomerang'
 alias boombox='cd ~/origami/code/boombox'
@@ -59,7 +58,9 @@ alias pocket='cd ~/origami/code/pocket'
 alias wizzy='cd ~/origami/code/wizard'
 alias gamifire='cd ~/origami/code/firebase'
 
-alias icloud='cd /Library/Mobile Documents/com~apple~CloudDocs/code'
+alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/code'
+alias traba='icloud; and cd ./traba'
+alias gami='icloud; and cd ./origami'
 
 # SHORTCUTS
 alias desky='cd ~/Desktop'
