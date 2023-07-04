@@ -16,6 +16,7 @@ alias sshcopy='xclip -sel clip < ~/.ssh/id_rsa.pub'
 
 # DOTFILES
 alias dot='cd ~/dotfiles; and v'
+alias dotv='cd ~/dotfiles; and v'
 alias dotnvim='cd ~/.config/nvim; and v'
 
 
@@ -47,11 +48,11 @@ alias tml='tmux list-sessions'
 
 
 # CD ALIASES
-alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/code'
+alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 
 alias notes='icloud; and cd ./notes; and ll'
-alias traba='icloud; and cd ./traba'
-alias gami='icloud; and cd ./origami'
+alias traba='icloud; and cd ./code/traba'
+alias gami='icloud; and cd ./code/origami'
 
 
 # SHORTCUTS
