@@ -16,7 +16,7 @@ alias sshcopy='xclip -sel clip < ~/.ssh/id_rsa.pub'
 
 # DOTFILES
 alias dot='cd ~/dotfiles; and v'
-alias dotnvim = "cd ~/.config/nvim; and v"
+alias dotnvim='cd ~/.config/nvim; and v'
 
 
 # GIT
