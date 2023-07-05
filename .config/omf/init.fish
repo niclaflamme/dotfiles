@@ -44,7 +44,7 @@ alias v='vim'
 # TMUX
 alias tmux='env TERM=xterm-256color tmux'
 alias tm='tmux'
-alias tma='tmux attach'
+alias tma='tmux new-session -A -s main'
 alias tml='tmux list-sessions'
 
 
