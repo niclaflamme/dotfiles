@@ -70,3 +70,4 @@ alias yi='yarn install'
 
 # PATH COMPLETION
 set -gx PATH ~/.cargo/bin $PATH
+set -gx PATH /Applications/Postgres.app/Contents/Versions/latest/bin $PATH
