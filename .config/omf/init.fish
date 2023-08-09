@@ -50,6 +50,7 @@ alias tml='tmux list-sessions'
 
 # CD ALIASES
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
+alias phase='icloud; and cd ./PhaseRamp'
 
 ## NOTES
 alias notes='icloud; and cd ./Obsidian; and ll'
@@ -57,7 +58,6 @@ alias notes='icloud; and cd ./Obsidian; and ll'
 ## CODE ALIASES
 alias icode='icloud; and cd ./Code'
 alias gami='icode; and cd ./origami; and ll'
-alias traba='icode; and cd ./traba; and ll'
 
 
 # SHORTCUTS
