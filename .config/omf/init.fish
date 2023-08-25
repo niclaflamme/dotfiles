@@ -58,6 +58,7 @@ alias notes='icloud; and cd ./Obsidian; and ll'
 ## CODE ALIASES
 alias icode='icloud; and cd ./Code'
 alias gami='icode; and cd ./origami; and ll'
+alias ow='icloud; and cd ./onward/onward; and ll'
 
 
 # SHORTCUTS
