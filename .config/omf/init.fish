@@ -58,7 +58,13 @@ alias notes='icloud; and cd ./Obsidian; and ll'
 ## CODE ALIASES
 alias icode='icloud; and cd ./Code'
 alias gami='icode; and cd ./origami; and ll'
+
+
+# Onward
 alias ow='icloud; and cd ./onward/onward; and ll'
+alias ow:db='pscale connect onward-db --port 3309'
+alias ow:temp='temporal server start-dev'
+alias ow:dev='yarn dev:app'
 
 
 # SHORTCUTS
