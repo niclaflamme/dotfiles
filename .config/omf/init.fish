@@ -65,7 +65,7 @@ alias ow='icloud; and cd ./onward/onward; and ll'
 
 alias ow:1='ow; and pscale connect onward-db --port 3309'
 alias ow:2='ow; and temporal server start-dev'
-alias ow:3='ow; and hookdeck listen 8910 recall-events'
+alias ow:3='ow; and hookdeck listen 8910 dev-events'
 alias ow:4='ow; and yarn dev:app'
 
 
