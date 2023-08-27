@@ -64,7 +64,8 @@ alias gami='icode; and cd ./origami; and ll'
 alias ow='icloud; and cd ./onward/onward; and ll'
 alias ow:1='pscale connect onward-db --port 3309'
 alias ow:2='temporal server start-dev'
-alias ow:3='yarn dev:app'
+alias ow:3='hookdeck listen 8910 recall-events'
+alias ow:4='yarn dev:app'
 
 
 # SHORTCUTS
