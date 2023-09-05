@@ -62,6 +62,8 @@ alias gami='icode; and cd ./origami; and ll'
 
 # ONWARD
 alias ow='icloud; and cd ./onward/onward; and ll'
+alias ow:fern='icloud; and cd ./onward/onward/packages/fern; and ll'
+alias ow:db='icloud; and cd ./onward/onward/packages/database; and ll'
 
 alias ow:1='ow; and pscale connect onward-db --port 3309'
 alias ow:2='ow; and temporal server start-dev'
