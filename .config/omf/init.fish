@@ -50,7 +50,7 @@ alias tml='tmux list-sessions'
 
 # CD ALIASES
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
-alias judo='icloud; and cd ./judo'
+alias judo='icloud; and cd ./judo/code'
 
 ## NOTES
 alias notes='icloud; and cd ./Obsidian; and ll'
