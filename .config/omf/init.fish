@@ -50,7 +50,7 @@ alias tml='tmux list-sessions'
 
 # CD ALIASES
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
-alias judo='~/judo/code'
+alias judo='cd ~/judo/code'
 alias judo:start='cd ~/judo/code/monorepo; and pnpm run dev:all'
 alias judo:mono='cd ~/judo/code/monorepo'
 
