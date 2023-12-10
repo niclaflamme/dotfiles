@@ -50,22 +50,8 @@ alias tml='tmux list-sessions'
 
 # CD ALIASES
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
-alias judo='cd ~/judo/code'
-alias judo:start='cd ~/judo/code/monorepo; and pnpm run dev:all'
-alias judo:mono='cd ~/judo/code/monorepo'
-
-## NOTES
-alias notes='icloud; and cd ./Obsidian; and ll'
-alias icode='icloud; and cd ./Code'
-
-# SHORTCUTS
 alias desky='cd ~/Desktop'
-
-
-# YARN
-alias ysd='yarn start:dev'
-alias ys='yarn start'
-alias yi='yarn install'
+alias strangers='cd ~/strangers/code'
 
 
 # PATH COMPLETION
