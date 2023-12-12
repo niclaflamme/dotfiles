@@ -51,7 +51,10 @@ alias tml='tmux list-sessions'
 # CD ALIASES
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 alias desky='cd ~/Desktop'
+
 alias strangers='cd ~/strangers/code'
+alias sapi='cd ~/strangers/code/api'
+alias sios='cd ~/strangers/code/strangers'
 
 
 # PATH COMPLETION
