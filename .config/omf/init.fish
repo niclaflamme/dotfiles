@@ -57,7 +57,7 @@ alias sapi='cd ~/strangers/code/api'
 alias sios='cd ~/strangers/code/strangers'
 
 # BUN ALIASES
-alias brsd = 'bun run start:dev'
+alias brsd='bun run start:dev'
 
 
 # PATH COMPLETION
