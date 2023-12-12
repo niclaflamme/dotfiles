@@ -56,6 +56,9 @@ alias strangers='cd ~/strangers/code'
 alias sapi='cd ~/strangers/code/api'
 alias sios='cd ~/strangers/code/strangers'
 
+# BUN ALIASES
+alias brsd = 'bun run start:dev'
+
 
 # PATH COMPLETION
 set -gx PATH ~/.cargo/bin $PATH
