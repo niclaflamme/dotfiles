@@ -59,6 +59,14 @@ alias sios='cd ~/strangers/code/strangers'
 # BUN ALIASES
 alias brsd='bun run start:dev'
 
+# ONWARD
+alias ow:mono='cd ~/onward/monorepo'
+
+alias ow:pscale='ow:mono; and pscale connect onward-db --port 3309'
+alias ow:temporal='ow:mono; and temporal server start-dev'
+alias ow:hookdeck='ow:mono; and hookdeck listen 8910'
+alias ow:dev='ow:mono; and yarn dev:app'
+
 
 # PATH COMPLETION
 set -gx PATH ~/.cargo/bin $PATH
