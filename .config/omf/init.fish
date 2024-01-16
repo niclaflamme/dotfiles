@@ -60,6 +60,7 @@ alias sios='cd ~/strangers/code/strangers'
 alias brsd='bun run start:dev'
 
 # ONWARD
+alias ow='cd ~/onward/monorepo'
 alias ow:mono='cd ~/onward/monorepo'
 
 alias ow:pscale='ow:mono; and pscale connect onward-db --port 3309'
