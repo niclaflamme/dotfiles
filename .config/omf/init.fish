@@ -66,11 +66,13 @@ alias ow:ui='cd ~/onward/monorepo/packages/ui'
 alias ow:app='cd ~/onward/monorepo/apps/app'
 alias ow:api='cd ~/onward/monorepo/apps/app'
 
-alias ow:pscale='ow:mono; and pscale connect onward-db --port 3309'
-alias ow:temporal='ow:mono; and temporal server start-dev'
-alias ow:hookdeck='ow:mono; and hookdeck listen 8910'
-alias ow:api:dev='ow:mono; and cd ./services/api; and yarn dev'
-alias ow:app:dev='ow:mono; and cd ./apps/app; and yarn dev'
+alias ow:bg:pscale='ow:mono; and pscale connect onward-db --port 3309'
+alias ow:bg:temporal='ow:mono; and temporal server start-dev'
+alias ow:bg:hookdeck='ow:mono; and hookdeck listen 8910'
+
+alias ow:dev:api='ow:mono; and npx turbo run dev --filter=api...'
+alias ow:dev:app='ow:mono; and npx turbo run dev --filter=app...'
+alias ow:dev:temporal='ow:mono; and npx turbo run dev --filter=temporal...'
 
 
 # PATH COMPLETION
