@@ -40,6 +40,9 @@ end
 alias vim="nvim"
 alias v='vim'
 
+## ZED
+alias z="zed ."
+
 
 # TMUX
 alias tmux='env TERM=xterm-256color tmux'
@@ -51,13 +54,6 @@ alias tml='tmux list-sessions'
 # CD ALIASES
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 alias desky='cd ~/Desktop'
-
-alias strangers='cd ~/strangers/code'
-alias sapi='cd ~/strangers/code/api'
-alias sios='cd ~/strangers/code/strangers'
-
-# BUN ALIASES
-alias brsd='bun run start:dev'
 
 # ONWARD
 alias ow='cd ~/onward/monorepo'
@@ -73,6 +69,10 @@ alias ow:bg:hookdeck='ow:mono; and hookdeck listen 8910'
 alias ow:dev:api='ow:mono; and npx turbo run dev --filter=api...'
 alias ow:dev:app='ow:mono; and npx turbo run dev --filter=app...'
 alias ow:dev:temporal='ow:mono; and npx turbo run dev --filter=temporal...'
+
+# SCORCH
+alias scorch='cd ~/scorch/code'
+
 
 
 # PATH COMPLETION
