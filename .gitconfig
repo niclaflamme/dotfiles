@@ -13,8 +13,7 @@
 	email = nic@laflamme.io
 	name = Nic Laflamme
 [core]
-	editor = "zed --wait"
-  # editor = nvim
+  editor = nvim
 [push]
 	default = simple
     autoSetupRemote = true
