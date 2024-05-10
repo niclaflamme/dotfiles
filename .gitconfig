@@ -1,7 +1,7 @@
 [alias]
-    aa = add .
+  aa = add .
 	br = branch
-	ci = commit
+  ci = commit
 	co = checkout
 	cp = cherry-pick
 	hist = log --pretty=format:%h
@@ -13,7 +13,8 @@
 	email = nic@laflamme.io
 	name = Nic Laflamme
 [core]
-	editor = nvim
+	editor = "zed --wait"
+  # editor = nvim
 [push]
 	default = simple
     autoSetupRemote = true
