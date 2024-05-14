@@ -57,18 +57,12 @@ alias desky='cd ~/Desktop'
 
 # ONWARD
 alias ow='cd ~/onward/monorepo'
-alias ow:mono='cd ~/onward/monorepo'
-alias ow:ui='cd ~/onward/monorepo/packages/ui'
-alias ow:app='cd ~/onward/monorepo/apps/app'
-alias ow:api='cd ~/onward/monorepo/apps/app'
+alias ow:db='cd ~/onward/monorepo/packages/database'
+alias ow:fern='cd ~/onward/monorepo/packages/database'
 
-alias ow:bg:pscale='ow:mono; and pscale connect onward-db nic-dev --port 3309'
+alias ow:bg:pscale='ow:mono; and pscale connect onward-db main --port 3309'
 alias ow:bg:temporal='ow:mono; and temporal server start-dev'
 alias ow:bg:hookdeck='ow:mono; and hookdeck listen 8910'
-
-alias ow:dev:api='ow:mono; and npx turbo run dev --filter=api...'
-alias ow:dev:app='ow:mono; and npx turbo run dev --filter=app...'
-alias ow:dev:temporal='ow:mono; and npx turbo run dev --filter=temporal...'
 
 # SCORCH
 alias scorch='cd ~/scorch/code'
