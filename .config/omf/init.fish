@@ -58,7 +58,7 @@ alias desky='cd ~/Desktop'
 # ONWARD
 alias ow='cd ~/onward/monorepo'
 alias ow:db='cd ~/onward/monorepo/packages/database'
-alias ow:fern='cd ~/onward/monorepo/packages/database'
+alias ow:fern='cd ~/onward/monorepo/services/@api/fern'
 
 alias ow:bg:pscale='ow:mono; and pscale connect onward-db main --port 3309'
 alias ow:bg:temporal='ow:mono; and temporal server start-dev'
