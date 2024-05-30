@@ -13,7 +13,7 @@
 	email = nic@laflamme.io
 	name = Nic Laflamme
 [core]
-	editor = zed
+	editor = zed --wait
 [push]
 	default = simple
     autoSetupRemote = true
