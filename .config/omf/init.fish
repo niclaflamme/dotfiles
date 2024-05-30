@@ -59,6 +59,7 @@ alias desky='cd ~/Desktop'
 alias ow='cd ~/onward/monorepo'
 alias ow:db='cd ~/onward/monorepo/packages/database'
 alias ow:fern='cd ~/onward/monorepo/services/@api/fern'
+alias mib="NODE_OPTIONS=--max-old-space-size=8192 make i b"
 
 alias ow:bg:pscale='ow:mono; and pscale connect onward-db main --port 3309'
 alias ow:bg:temporal='ow:mono; and temporal server start-dev'
@@ -73,6 +74,9 @@ alias scorch='cd ~/scorch/code'
 set -gx PATH ~/.cargo/bin $PATH
 set -gx PATH /Applications/Postgres.app/Contents/Versions/latest/bin $PATH
 
+
+# ENV
+set -Ux GIT_EDITOR zed
 
 
 ## >> GRAPHITE FISH COMPLETION ~ start
