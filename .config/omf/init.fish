@@ -50,6 +50,9 @@ alias tm='tmux'
 alias tma='tmux new-session -A -s main'
 alias tml='tmux list-sessions'
 
+# Make
+alias mib="NODE_OPTIONS=--max-old-space-size=18000 make i b"
+
 
 # CD ALIASES
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
@@ -57,13 +60,13 @@ alias desky='cd ~/Desktop'
 
 # ONWARD
 alias ow='cd ~/onward/monorepo'
+
+alias ow:pscale='ow; and pscale connect onward-db main --port 3309'
+alias ow:app='cd ~/onward/monorepo; and pnpx turbo run dev --filter=app...'
+alias ow:api='cd ~/onward/monorepo/services/@api/service; pnpm run dev'
+
 alias ow:db='cd ~/onward/monorepo/packages/database'
 alias ow:fern='cd ~/onward/monorepo/services/@api/fern'
-alias mib="NODE_OPTIONS=--max-old-space-size=18000 make i b"
-
-alias ow:bg:pscale='ow:mono; and pscale connect onward-db main --port 3309'
-alias ow:bg:temporal='ow:mono; and temporal server start-dev'
-alias ow:bg:hookdeck='ow:mono; and hookdeck listen 8910'
 
 # SCORCH
 alias scorch='cd ~/scorch/code'
