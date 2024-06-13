@@ -67,7 +67,7 @@ alias ow:bg:hookdeck='ow:mono; and hookdeck listen 8910'
 
 # SCORCH
 alias scorch='cd ~/scorch/code'
-alias scorch:build='cd ~/scorch/code; and doppler run -c prd -- bunx tauri build --target aarch64-apple-darwin'
+alias scorch:tauri:build='cd ~/scorch/code/tauri; and doppler run -c prd -- bunx tauri build --target aarch64-apple-darwin'
 
 
 
