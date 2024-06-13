@@ -59,7 +59,7 @@ alias desky='cd ~/Desktop'
 alias ow='cd ~/onward/monorepo'
 alias ow:db='cd ~/onward/monorepo/packages/database'
 alias ow:fern='cd ~/onward/monorepo/services/@api/fern'
-alias mib="NODE_OPTIONS=--max-old-space-size=8192 make i b"
+alias mib="NODE_OPTIONS=--max-old-space-size=18000 make i b"
 
 alias ow:bg:pscale='ow:mono; and pscale connect onward-db main --port 3309'
 alias ow:bg:temporal='ow:mono; and temporal server start-dev'
@@ -67,6 +67,7 @@ alias ow:bg:hookdeck='ow:mono; and hookdeck listen 8910'
 
 # SCORCH
 alias scorch='cd ~/scorch/code'
+alias scorch:build='cd ~/scorch/code; and doppler run -c prd -- bunx tauri build --target aarch64-apple-darwin'
 
 
 
